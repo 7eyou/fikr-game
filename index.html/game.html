@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>فِكْرٌ - الجولة</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="fade-enter">
+  <div class="header">
+    <div class="logo">🎯 اللعبة: فِكْرٌ</div>
+  </div>
+
+  <div class="topbar">
+    <div class="score-box"><div class="teamA">Team A: <span id="scoreA">0</span></div></div>
+    <div class="score-box"><div class="total">Total: <span id="totalScore">0</span></div></div>
+    <div class="score-box"><div class="teamB">Team B: <span id="scoreB">0</span></div></div>
+  </div>
+
+  <div id="chosenTitle" style="font-weight:700;margin-bottom:10px"></div>
+  <div class="sections-list" id="sectionsList"></div>
+
+  <div style="margin-top:18px">
+    <button class="back-btn" id="backBtn">عودة إلى البداية – Back to Start</button>
+  </div>
+
+  <!-- modal -->
+  <div id="modal" style="display:none" class="modal">
+    <div class="modal-card">
+      <h3 id="modalTitle">السؤال</h3>
+      <div id="modalQuestion" style="font-size:18px"></div>
+      <div id="modalAnswer" class="answer" style="display:none"></div>
+      <div class="modal-actions">
+        <button id="showAnswerBtn" class="small-btn" style="background:#0fbcf9;color:white">Show Answer – إظهار الجواب</button>
+        <button id="teamABtn" class="small-btn" style="background:#1565c0;color:white">Team A</button>
+        <button id="teamBBtn" class="small-btn" style="background:#c62828;color:white">Team B</button>
+        <button id="noOneBtn" class="small-btn" style="background:#9e9e9e;color:white">No one – لا أحد</button>
+      </div>
+    </div>
+  </div>
+
+<script>
+// game logic will be loaded from script.js
+</script>
+<script src="script.js"></script>
+</body>
+</html>
